@@ -1,0 +1,225 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"employees\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.1053.0 (24.08)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-IN",
+    "cultures": [
+      {
+        "name": "en-IN",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-IN",
+    "tables": [
+      {
+        "name": "employees",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "employee_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "lineageTag": "03e22855-cb73-4722-8497-20a79befba28",
+            "sourceColumn": "employee_id",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "first_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2cd3b426-d9f4-4de8-b397-8750bbf5d9c1",
+            "sourceColumn": "first_name",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "last_name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "44d82ad7-19e4-45c4-b407-24325d86e917",
+            "sourceColumn": "last_name",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "email",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "67c824d3-81fa-42f3-a779-84e170c04934",
+            "sourceColumn": "email",
+            "sourceProviderType": "nvarchar(100)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "phone_number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "85bcd428-ba85-4b56-81b3-999fdb5ab707",
+            "sourceColumn": "phone_number",
+            "sourceProviderType": "nvarchar(15)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "hire_date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "22e80c72-e8a4-4968-896b-0259bdefa134",
+            "sourceColumn": "hire_date",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "job_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ad4e71aa-1c8f-4c4f-9cf7-1a086d25585f",
+            "sourceColumn": "job_id",
+            "sourceProviderType": "nvarchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "salary",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e0bffaf7-58b1-4893-941e-7f11f0fd82d7",
+            "sourceColumn": "salary",
+            "sourceProviderType": "decimal(10, 2)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "manager_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dee0b75b-0f88-48d6-91c3-0d53987dadb4",
+            "sourceColumn": "manager_id",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "department_id",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f2e81193-e1c3-4f8b-9427-ab069fb1bb1d",
+            "sourceColumn": "department_id",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "87898212-ee42-478b-aaae-2ca20f758d78",
+        "partitions": [
+          {
+            "name": "employees",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"demobi-server.database.windows.net,1433\", \"demobi\"),",
+                "    dbo_employees = Source{[Schema=\"dbo\",Item=\"employees\"]}[Data]",
+                "in",
+                "    dbo_employees"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
